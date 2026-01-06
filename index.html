@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Spotify Premium Mod APK - Informational guide about features, comparisons, and educational purposes only.">
+  <title>Spotify Premium Mod APK - Spotifyinfo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    /* ==============================
+       GLOBAL RESET & BASE STYLES
+       ============================== */
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0a0a0a !important;
+      color: #ffffff !important;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0a0a0a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #1DB954, #1ed760);
+      border-radius: 6px;
+      border: 2px solid #0a0a0a;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(180deg, #1ed760, #1DB954);
+    }
+
+    /* ==============================
+       HEADER STYLES
+       ============================== */
+    .site-header {
+      background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(29, 185, 84, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-area img {
+      width: 36px;
+      height: 36px;
+    }
+
+    .site-name {
+      font-size: 24px;
+      font-weight: 900;
+      color: #000;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #000 !important;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 4px 0;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #000;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links a:hover {
+      color: #000 !important;
+      text-decoration: none;
+    }
+
+    /* ==============================
+       HERO SECTION
+       ============================== */
+    .spotify-hero {
+      --green: #1DB954;
+      --bg: #121212;
+      --card: #181818;
+      --text: #ffffff;
+      --muted: #b3b3b3;
+      --border: #2a2a2a;
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, sans-serif;
+      color: var(--text);
+      background: radial-gradient(1400px 700px at 80% -10%, rgba(29, 185, 84, .25), transparent 70%),
+        radial-gradient(800px 400px at 20% 100%, rgba(29, 185, 84, .08), transparent 60%),
+        linear-gradient(180deg, #0a0a0a, #0e0e0e 30%, #121212 70%, #0a0a0a 100%);
+      padding: 48px 24px;
+      margin: 20px;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      gap: 22px;
+      grid-template-columns: 1fr;
+      align-items: center;
+    }
+
+    .hero-copy h1 {
+      margin: 0 0 16px;
+      font-size: clamp(28px, 5vw, 48px);
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #ffffff 0%, #b3b3b3 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 4px 24px rgba(29, 185, 84, .3);
+    }
+
+    .tagline {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: clamp(15px, 2.6vw, 19px);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      padding: 0;
+      margin: 0 0 16px;
+      list-style: none;
+    }
+
+    .badges li {
+      background: rgba(24, 24, 24, 0.6);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(29, 185, 84, 0.2);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .badges li:hover {
+      background: rgba(29, 185, 84, 0.15);
+      border-color: rgba(29, 185, 84, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .badges .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 3px rgba(29, 185, 84, .12);
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 6px 0 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid transparent;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
+      color: #000;
+      border: 1px solid transparent;
+      box-shadow: 0 4px 15px rgba(29, 185, 84, 0.3);
+    }
+
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transition: left 0.5s;
+    }
+
+    .btn-primary:hover::before {
+      left: 100%;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #1ed760 0%, #1DB954 100%);
+      color: #000;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 25px rgba(29, 185, 84, 0.5);
+    }
+
+    .btn-primary:active {
+      transform: translateY(-1px) scale(1.02);
+    }
+
+    .btn-ghost {
+      background: rgba(24, 24, 24, 0.6);
+      backdrop-filter: blur(10px);
+      color: #fff;
+      border: 2px solid rgba(29, 185, 84, 0.3);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(29, 185, 84, 0.1);
+      color: #1DB954;
+      border-color: rgba(29, 185, 84, 0.6);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(29, 185, 84, 0.2);
+    }
+
+    .btn-ghost:active {
+      transform: translateY(-1px);
+    }
+
+    .disclaimer {
+      color: var(--muted);
+      font-size: 12.5px;
+      margin: 8px 0 0;
+      border-left: 3px solid var(--green);
+      padding-left: 10px;
+    }
+
+    /* Hero Visual */
+    .hero-visual {
+      position: relative;
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 24px;
+    }
+
+    .vinyl {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 50%, #101010 0 38%, #0b0b0b 38% 40%, #000 41% 100%),
+        repeating-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, .05) 0 2px, transparent 2px 4px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .45), inset 0 0 0 2px #000;
+      position: relative;
+      transform: rotate(-8deg);
+    }
+
+    .vinyl .label {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: inset 0 0 0 8px rgba(0, 0, 0, .25);
+    }
+
+    .eq {
+      display: flex;
+      align-items: flex-end;
+      gap: 6px;
+      height: 80px;
+      margin-right: 8px;
+    }
+
+    .eq span {
+      display: block;
+      width: 8px;
+      background: var(--green);
+      border-radius: 3px;
+      animation: bounce 1.2s infinite ease-in-out;
+    }
+
+    .eq span:nth-child(1) {
+      height: 38%;
+      animation-delay: 0s;
+    }
+
+    .eq span:nth-child(2) {
+      height: 70%;
+      animation-delay: .15s;
+    }
+
+    .eq span:nth-child(3) {
+      height: 50%;
+      animation-delay: .3s;
+    }
+
+    .eq span:nth-child(4) {
+      height: 80%;
+      animation-delay: .45s;
+    }
+
+    .eq span:nth-child(5) {
+      height: 60%;
+      animation-delay: .6s;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: scaleY(.7);
+      }
+
+      50% {
+        transform: scaleY(1.2);
+      }
+    }
+
+    /* ==============================
+       CONTENT SECTIONS
+       ============================== */
+    .spacer {
+      height: 46px;
+    }
+
+    .content-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .content-section p {
+      margin: 15px 0;
+      color: #ffffff;
+    }
+
+    .content-section h2,
+    .content-section h3 {
+      color: #1DB954;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .section-heading {
+      color: #1DB954;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .sub-heading {
+      color: #1DB954;
+      margin-top: 25px;
+      margin-bottom: 12px;
+      font-size: 1.3em;
+    }
+
+    .content-section strong {
+      color: #ffffff;
+    }
+
+    .content-section a {
+      color: #1DB954;
+      text-decoration: none;
+    }
+
+    .content-section a:hover {
+      color: #1ed760;
+      text-decoration: underline;
+    }
+
+    /* ==============================
+       BANNER SECTION
+       ============================== */
+    .spotify-mod-banner {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #0f0f0f 0%, #191414 50%, #1db95422 100%);
+      text-align: center;
+      color: #fff;
+      padding: 90px 20px;
+      margin: 60px auto;
+      border-radius: 16px;
+    }
+
+    .banner-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .banner-title {
+      font-size: clamp(28px, 5vw, 44px);
+      margin: 0 0 15px;
+      font-weight: 800;
+      color: #1DB954;
+      text-shadow: 0 0 15px rgba(29, 185, 84, 0.25);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeSlideUp 1.2s ease-out 0.4s forwards;
+    }
+
+    .banner-subtitle {
+      font-size: clamp(16px, 2vw, 20px);
+      color: #b3b3b3;
+      margin: 0 0 18px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeSlideUp 1.2s ease-out 1.2s forwards;
+    }
+
+    .banner-disclaimer {
+      font-size: 13px;
+      color: #888;
+      margin: 0;
+    }
+
+    @keyframes fadeSlideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .banner-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pulse {
+      width: 180px;
+      height: 180px;
+      background: url("https://spotifymodyapk.com/wp-content/uploads/2025/08/spotify-logo-for-borders.png") no-repeat center/contain;
+      opacity: 0.08;
+      animation: pulseAnim 10s infinite ease-in-out;
+    }
+
+    .pulse.delay {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      opacity: 0.05;
+      animation-delay: 5s;
+    }
+
+    @keyframes pulseAnim {
+
+      0%,
+      100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 0.08;
+      }
+
+      50% {
+        transform: scale(1.2) rotate(10deg);
+        opacity: 0.15;
+      }
+    }
+
+    /* ==============================
+       PLAYLISTS SECTION
+       ============================== */
+    .spotify-playlists {
+      font-family: Arial, system-ui, sans-serif;
+      background: #121212;
+      color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 25px;
+    }
+
+    .spotify-playlists h2 {
+      color: #1DB954;
+      margin-bottom: 18px;
+    }
+
+    .playlist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .playlist-card {
+      background: rgba(24, 24, 24, 0.6);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(42, 42, 42, 0.5);
+      border-radius: 16px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .playlist-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      border-color: rgba(29, 185, 84, 0.6);
+      background: rgba(24, 24, 24, 0.8);
+      box-shadow: 0 12px 35px rgba(29, 185, 84, 0.25);
+    }
+
+    .cover {
+      aspect-ratio: 1/1;
+      background: #141414;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .cover::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, #141414, #1a1a1a, #141414);
+      animation: shimmer 1.2s infinite;
+      opacity: .4;
+    }
+
+    .cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @keyframes shimmer {
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    .playlist-title {
+      margin: 0;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .playlist-card p {
+      margin: 0;
+      color: #b3b3b3;
+      font-size: 14px;
+    }
+
+    .playlist-card .btn {
+      align-self: flex-start;
+      background: #1DB954;
+      color: #000;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 700;
+      transition: background .2s ease, color .2s ease;
+    }
+
+    .playlist-card .btn:hover {
+      background: #1ed760;
+      color: #000;
+    }
+
+    /* ==============================
+       TESTIMONIALS SECTION
+       ============================== */
+    .testimonial-column {
+      padding: 20px;
+    }
+
+    .testimonial-card {
+      background: rgba(24, 24, 24, 0.6);
+      backdrop-filter: blur(10px);
+      padding: 24px;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(29, 185, 84, 0.15);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(29, 185, 84, 0.3);
+      box-shadow: 0 8px 25px rgba(29, 185, 84, 0.15);
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .rating-number {
+      font-size: 48px;
+    }
+
+    .rating-text {
+      font-size: 14px;
+    }
+
+    .star-icon::before {
+      content: "★";
+      color: #1DB954;
+      font-size: 20px;
+    }
+
+    /* ==============================
+       COMPARISON SECTION
+       ============================== */
+    .music-compare-hero {
+      background: #121212;
+      padding: 100px 20px;
+      margin: 60px auto;
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .eq-wrapper {
+      display: flex;
+      gap: 100px;
+    }
+
+    .eq-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      transition: transform .3s ease;
+    }
+
+    .eq-block:hover {
+      transform: translateY(-6px);
+    }
+
+    .eq-block .eq {
+      display: flex;
+      gap: 6px;
+      align-items: flex-end;
+      height: 140px;
+    }
+
+    .eq-block .eq span {
+      width: 14px;
+      border-radius: 3px;
+      animation: bounce 1.2s infinite ease-in-out;
+    }
+
+    .eq-block .eq span:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .eq-block .eq span:nth-child(2) {
+      animation-delay: .2s;
+    }
+
+    .eq-block .eq span:nth-child(3) {
+      animation-delay: .4s;
+    }
+
+    .eq-block .eq span:nth-child(4) {
+      animation-delay: .6s;
+    }
+
+    .eq-block .eq span:nth-child(5) {
+      animation-delay: .8s;
+    }
+
+    .eq-block.spotify span {
+      background: #1DB954;
+      box-shadow: 0 0 14px rgba(29, 185, 84, 0.7);
+    }
+
+    .eq-block.apple span {
+      background: #d1d1d1;
+      box-shadow: 0 0 14px rgba(209, 209, 209, 0.7);
+    }
+
+    .eq-block.youtube span {
+      background: #FF0000;
+      box-shadow: 0 0 14px rgba(255, 0, 0, 0.7);
+    }
+
+    .eq-label {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+      text-align: center;
+      letter-spacing: .5px;
+    }
+
+    .eq-block.spotify .eq-label {
+      color: #1DB954;
+    }
+
+    .eq-block.apple .eq-label {
+      color: #d1d1d1;
+    }
+
+    .eq-block.youtube .eq-label {
+      color: #FF0000;
+    }
+
+    .eq-users {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0;
+      text-align: center;
+      color: #fff;
+      opacity: 0.9;
+      letter-spacing: .3px;
+    }
+
+    /* ==============================
+       TABLE COMPARISON
+       ============================== */
+    .spotify-compare {
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .spotify-compare h2 {
+      color: #1DB954;
+      margin-bottom: 15px;
+    }
+
+    .compare-card {
+      background: rgba(24, 24, 24, 0.6);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(42, 42, 42, 0.5);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .compare-card table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 600px;
+    }
+
+    .compare-card th,
+    .compare-card td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #2a2a2a;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .compare-card th {
+      background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
+      color: #000;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .compare-card td {
+      background: rgba(24, 24, 24, 0.6);
+      color: #ffffff;
+      transition: all 0.3s ease;
+    }
+
+    .compare-card tr:hover td {
+      background: rgba(29, 185, 84, 0.08);
+      transform: scale(1.01);
+    }
+
+    .note {
+      font-size: 13px;
+      color: #b3b3b3;
+      margin-top: 15px;
+      padding: 12px;
+      background: #101010;
+      border-radius: 6px;
+    }
+
+    /* ==============================
+       FAQ SECTION
+       ============================== */
+    .spotify-faq {
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 25px;
+    }
+
+    .spotify-faq h2 {
+      color: #1DB954;
+      margin-bottom: 15px;
+    }
+
+    .faq-container details {
+      background: rgba(24, 24, 24, 0.6);
+      backdrop-filter: blur(10px);
+      margin-bottom: 12px;
+      border: 1px solid rgba(42, 42, 42, 0.5);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .faq-container details:hover {
+      border-color: rgba(29, 185, 84, 0.4);
+      box-shadow: 0 6px 20px rgba(29, 185, 84, 0.15);
+    }
+
+    .faq-container summary {
+      cursor: pointer;
+      padding: 16px 20px;
+      font-weight: 700;
+      color: #1DB954;
+      outline: none;
+      transition: all 0.3s ease;
+      user-select: none;
+    }
+
+    .faq-container summary:hover {
+      color: #1ed760;
+      background: rgba(29, 185, 84, 0.05);
+    }
+
+    .faq-container p {
+      padding: 0 15px 12px;
+      font-size: 14px;
+      color: #b3b3b3;
+      margin: 0;
+    }
+
+    .faq-container details[open] summary {
+      background: rgba(29, 185, 84, 0.1);
+      color: #1ed760;
+    }
+
+    .faq-container details[open] p {
+      border-top: 1px solid #2a2a2a;
+      margin-top: 5px;
+    }
+
+    /* ==============================
+       FOOTER
+       ============================== */
+    .site-footer {
+      background: #0b0b0b;
+      color: #ccc;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .footer-brand h3 {
+      color: #1db954;
+      margin-bottom: 10px;
+    }
+
+    .footer-links h4,
+    .footer-disclaimer h4 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 8px;
+    }
+
+    .footer-links a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: #1db954;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #222;
+      text-align: center;
+      padding: 15px 10px;
+      color: #888;
+    }
+
+    /* ==============================
+       RESPONSIVE DESIGN
+       ============================== */
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .eq-wrapper {
+        gap: 40px;
+      }
+
+      .eq-block .eq {
+        height: 100px;
+      }
+
+      .eq-block .eq span {
+        width: 10px;
+      }
+
+      .eq-label {
+        font-size: 16px;
+      }
+
+      .eq-users {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .spotify-compare h2 {
+        font-size: 18px;
+      }
+
+      .compare-card th,
+      .compare-card td {
+        font-size: 13px;
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .playlist-title {
+        font-size: 15px;
+      }
+
+      .playlist-card p {
+        font-size: 13px;
+      }
+    }
+
+    @media (min-width: 880px) {
+      .hero-inner {
+        grid-template-columns: 1.1fr .9fr;
+      }
+
+      .hero-visual {
+        min-height: 220px;
+      }
+
+      .vinyl {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-area">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+          alt="Spotify Logo">
+        <span class="site-name">Spotifyinfo</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#playlists">Playlists</a>
+        <a href="#comparison">Comparison</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="top" class="spotify-hero" aria-labelledby="page-title">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1 id="page-title">Spotify Premium Mod APK v9.1.0.490 (All features Unlocked)*</h1>
+        <p class="tagline">A quick, informative look at features users seek vs. the official app.</p>
+        <ul class="badges" role="list">
+          <li><span class="dot"></span> Ad-Free Streaming*</li>
+          <li><span class="dot"></span> Offline Listening*</li>
+          <li><span class="dot"></span> Up to "320 kbps" Claims*</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-primary" href=https://www.mediafire.com/file/sr0n8wjcxbt3mk1/Spoti-v9.0.62.877_spotifepriumium.com.apk/file rel="nofollow noopener"
+            aria-label="Download MOD APK (informational)">
+            Download
+          </a>
+          <a class="btn btn-ghost" href="#comparison">
+            See Comparison
+          </a>
+        </div>
+        <p class="disclaimer">
+          *For informational purposes only. Unofficial MOD APKs may violate Spotify Terms of Service,
+          pose security risks, and can lead to account bans. Consider using the official app to
+          support artists and ensure safety.
+        </p>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="vinyl">
+          <div class="label"></div>
+        </div>
+        <div class="eq">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div id="about" class="content-section">
+    <div class="spacer" aria-hidden="true"></div>
+
+    <p>Spotify app is the first thing this gen z wants to <strong>download</strong> in their mobile app and why not
+      because if you <strong>love music</strong> or are in the music scene, then this application has all what you want.
+    </p>
+
+    <p>Launched in 2008, it was not available worldwide but its demand made the company make it available worldwide.
+      Spotify has a <strong>freemium model</strong>. It allows the free users to listen to their favourite music with
+      ads. The paid version allows you to listen to your songs offline (downloaded on your storage) with no ads.</p>
+
+    <p>Thanks to some unknown developers for the <strong>modded version of the Spotify</strong> as it allows the users
+      to use the paid version without paying. One can download the songs and get rid of the ads even if they do not have
+      a subscription.</p>
+  </div>
+
+  <!-- ===== BANNER SECTION ===== -->
+  <section class="spotify-mod-banner" aria-label="No Subscription Needed">
+    <div class="banner-bg" aria-hidden="true">
+      <div class="pulse"></div>
+      <div class="pulse delay"></div>
+    </div>
+    <div class="banner-inner">
+      <p class="banner-title">No Subscription Needed</p>
+      <p class="banner-subtitle">Spotify MOD APK unlocks premium-style music without monthly payments.</p>
+      <p class="banner-disclaimer">⚠️ For informational purposes only. MOD APKs are unofficial, carry risks, and may
+        violate Spotify's Terms of Service.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTENT CONTINUED ===== -->
+  <div class="content-section">
+    <p>Users can download the MOD APK File of the SPOTIFY from our website to use it without ads on their
+      <strong>android mobile phones</strong>. Sadly, the APK files cannot be used on the IOS devices, so you have to
+      have an android phone to install spotify
+        premium Mod APK enjoy its benefits.
+    </p>
+
+    <h2 class="section-heading">Get to know Spotify First</h2>
+    <p>Think of Spotify as a giant music library that lives in your pocket. Instead of downloading songs, you just press
+      play and stream them right away. You can look up almost any artist, album, or track, and it will start playing
+      instantly. Spotify also creates playlists for you, like your own personal DJ, based on the kind of music you
+      already enjoy. It works on your phone, laptop, TV, or even in your car, so it follows you around wherever you need
+      music. Sometimes, Spotify Mod stops working</a>,
+      but you can fix it by keeping your app updated regularly.</p>
+  </div>
+
+  <!-- ===== PLAYLISTS SECTION ===== -->
+  <section id="playlists" class="spotify-playlists">
+    <h2>Curated Spotify Playlists (Artists & Moods)</h2>
+    <div class="playlist-grid">
+      <!-- Artist spotlights -->
+      <article class="playlist-card" data-spotify="https://open.spotify.com/playlist/37i9dQZF1DWWxPM4nWdhyI">
+        <figure class="cover"><img alt="Ed Sheeran Playlist" loading="lazy"></figure>
+        <h3 class="playlist-title">This Is Ed Sheeran</h3>
+        <p>All of Ed's biggest tracks in one place.</p>
+        <a class="btn" href="https://open.spotify.com/playlist/37i9dQZF1DWWxPM4nWdhyI" target="_blank"
+          rel="nofollow noopener noreferrer">Jump to Playlist</a>
+      </article>
+      <article class="playlist-card" data-spotify="https://open.spotify.com/playlist/37i9dQZF1DX5KpP2LN299J">
+        <figure class="cover"><img alt="Taylor Swift Playlist" loading="lazy"></figure>
+        <h3 class="playlist-title">This Is Taylor Swift</h3>
+        <p>Essential Taylor — from classics to current era.</p>
+        <a class="btn" href="https://open.spotify.com/playlist/37i9dQZF1DX5KpP2LN299J" target="_blank"
+          rel="nofollow noopener noreferrer">Jump to Playlist</a>
+      </article>
+      <article class="playlist-card" data-spotify="https://open.spotify.com/playlist/37i9dQZF1DZ06evO1n6IJz">
+        <figure class="cover"><img alt="Atif Aslam Playlist" loading="lazy"></figure>
+        <h3 class="playlist-title">This Is Atif Aslam</h3>
+        <p>Top hits from Atif Aslam in one mix.</p>
+        <a class="btn" href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO1n6IJz" target="_blank"
+          rel="nofollow noopener noreferrer">Jump to Playlist</a>
+      </article>
+      <!-- Mood playlists -->
+      <article class="playlist-card" data-spotify="https://open.spotify.com/playlist/37i9dQZF1DX4WYpdgoIcn6">
+        <figure class="cover"><img alt="Chill Hits Playlist" loading="lazy"></figure>
+        <h3 class="playlist-title">Chill Hits</h3>
+        <p>Kick back with easy, recent chill tunes.</p>
+        <a class="btn" href="https://open.spotify.com/playlist/37i9dQZF1DX4WYpdgoIcn6" target="_blank"
+          rel="nofollow noopener noreferrer">Jump to Playlist</a>
+      </article>
+      <article class="playlist-card" data-spotify="https://open.spotify.com/playlist/37i9dQZF1DX76Wlfdnj7AP">
+        <figure class="cover"><img alt="Beast Mode Playlist" loading="lazy"></figure>
+        <h3 class="playlist-title">Beast Mode</h3>
+        <p>High-energy bangers for training and hype.</p>
+        <a class="btn" href="https://open.spotify.com/playlist/37i9dQZF1DX76Wlfdnj7AP" target="_blank"
+          rel="nofollow noopener noreferrer">Jump to Playlist</a>
+      </article>
+      <article class="playlist-card" data-spotify="https://open.spotify.com/playlist/37i9dQZF1DWWQRwui0ExPn">
+        <figure class="cover"><img alt="Lofi Beats Playlist" loading="lazy"></figure>
+        <h3 class="playlist-title">lofi beats</h3>
+        <p>Study, focus, and mellow background beats.</p>
+        <a class="btn" href="https://open.spotify.com/playlist/37i9dQZF1DWWQRwui0ExPn" target="_blank"
+          rel="nofollow noopener noreferrer">Jump to Playlist</a>
+      </article>
+      <article class="playlist-card" data-spotify="https://open.spotify.com/playlist/37i9dQZF1DX4sWSpwq3LiO">
+        <figure class="cover"><img alt="Peaceful Piano Playlist" loading="lazy"></figure>
+        <h3 class="playlist-title">Peaceful Piano</h3>
+        <p>Slow down and breathe with calm piano.</p>
+        <a class="btn" href="https://open.spotify.com/playlist/37i9dQZF1DX4sWSpwq3LiO" target="_blank"
+          rel="nofollow noopener noreferrer">Jump to Playlist</a>
+      </article>
+      <article class="playlist-card" data-spotify="https://open.spotify.com/playlist/37i9dQZF1DX3rxVfibe1L0">
+        <figure class="cover"><img alt="Mood Booster Playlist" loading="lazy"></figure>
+        <h3 class="playlist-title">Mood Booster</h3>
+        <p>Feel-good tracks to lift your day.</p>
+        <a class="btn" href="https://open.spotify.com/playlist/37i9dQZF1DX3rxVfibe1L0" target="_blank"
+          rel="nofollow noopener noreferrer">Jump to Playlist</a>
+      </article>
+      <article class="playlist-card" data-spotify="https://open.spotify.com/playlist/37i9dQZF1DWWMOmoXKqHTD">
+        <figure class="cover"><img alt="Songs to Sing in the Car Playlist" loading="lazy"></figure>
+        <h3 class="playlist-title">Songs to Sing in the Car</h3>
+        <p>Big sing-alongs for road trips.</p>
+        <a class="btn" href="https://open.spotify.com/playlist/37i9dQZF1DWWMOmoXKqHTD" target="_blank"
+          rel="nofollow noopener noreferrer">Jump to Playlist</a>
+      </article>
+      <article class="playlist-card" data-spotify="https://open.spotify.com/playlist/37i9dQZF1DWSlwBojgQEcN">
+        <figure class="cover"><img alt="Acoustic Love Playlist" loading="lazy"></figure>
+        <h3 class="playlist-title">Acoustic Love</h3>
+        <p>Romantic, stripped-back acoustic songs.</p>
+        <a class="btn" href="https://open.spotify.com/playlist/37i9dQZF1DWSlwBojgQEcN" target="_blank"
+          rel="nofollow noopener noreferrer">Jump to Playlist</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <div class="content-section">
+    <h2 class="section-heading">Testimonials &amp; Ratings</h2>
+    <div class="testimonial-column">
+      <div class="testimonial-card">
+        <p class="text-center rating-number"><strong>4.8</strong></p>
+        <p class="text-center rating-text"><strong>out of 5</strong></p>
+      </div>
+    </div>
+
+    <div class="testimonial-column">
+      <div class="testimonial-card">
+        <p><strong>GEM Volunteer, 05/02/2025</strong></p>
+        <p>"Using Spotify Premium Mod APK has been nothing short of inspiring for me as a music lover. I have tried
+          countless apps before, but none gave me the freedom this one does."</p>
+      </div>
+    </div>
+
+    <div class="testimonial-column">
+      <div class="testimonial-card">
+        <p><strong>DeezNutsForPresident, 01/05/2022</strong></p>
+        <p>"Whether I am traveling, studying, or just taking a quiet walk, my music is always there, uninterrupted. It
+          feels freeing, almost like the app respects my time and space."</p>
+      </div>
+    </div>
+
+    <div class="testimonial-column">
+      <div class="testimonial-card">
+        <p><strong>shakespeareforlife, 07/10/2023</strong></p>
+        <p>"I have been using this app for a while and love that there are no ads. Being able to download playlists for
+          offline listening makes my commute so much easier."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MUSIC SERVICE COMPARISON ===== -->
+  <div class="content-section">
+    <h2 class="section-heading">Spotify vs Apple Music vs Youtube Music</h2>
+    <p>Now, compared to its rivals like Apple Music and YouTube Music, Spotify stands out mainly because of <strong>how
+        good its recommendations are</strong>. Apple Music has a slightly bigger library and works best if you're
+      already using an iPhone or other Apple devices, while YouTube Music shines if you like watching music videos along
+      with songs.</p>
+    <p>Spotify, though, is known for being user-friendly, having the best playlists like "Discover Weekly", and letting
+      you share your music taste with friends easily. If Apple Music feels like a polished music store and YouTube Music
+      feels like a video-based jukebox, Spotify is more like hanging out with a friend who always knows the <strong>next
+        track you will love</strong>.</p>
+  </div>
+
+  <section class="music-compare-hero">
+    <div class="eq-wrapper">
+      <div class="eq-block spotify">
+        <div class="eq">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <p class="eq-label">Spotify</p>
+        <p class="eq-users" data-target="600">0M+ Users</p>
+      </div>
+      <div class="eq-block apple">
+        <div class="eq">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <p class="eq-label">Apple Music</p>
+        <p class="eq-users" data-target="100">0M+ Users</p>
+      </div>
+      <div class="eq-block youtube">
+        <div class="eq">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <p class="eq-label">YouTube Music</p>
+        <p class="eq-users" data-target="80">0M+ Users</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BENEFITS SECTION ===== -->
+  <div id="features" class="content-section">
+    <h2 class="section-heading">Benefits of Downloading Spotify MOD APK</h2>
+
+    <h3 class="sub-heading">Listen to Ads-free Music</h3>
+    <p>Yeah, we know that it is so disturbing to listen to the ads when you are in a mood to listen to some good music
+      and ads really <strong>turns your experience into a terrible one</strong>.</p>
+    <p>Spotify No Ads Version turns out to be very useful here as it has no ads. Take it like that the developers have
+      <strong>swept up the ads from the code</strong> and now there are no hurdles for you in streaming your favourite
+      playlist. It also gives you a better chance to feature your work on
+        Spotify playlist without interruptions.
+    </p>
+    <p>Normally, Spotify App plays ads after 3 or 4 tracks if you have no subscription. The modded version has no ads
+      and you don't need to purchase any kind of plan.</p>
+
+    <h3 class="sub-heading">Play your music offline</h3>
+    <p>Imagine you are going for the tour and you cannot listen to your favourite music as you are out of your data
+      plan. Well, not anymore because Spotify Premium APK allows you to download your favourite music or playlists.</p>
+    <p>Saved or downloaded music can be accessed from the app even if you are offline. We recommend you make a personal
+      playlist of the downloaded music. It becomes easier when you are going for a hike or a gym session.</p>
+
+    <h3 class="sub-heading">320 kbps Audio Quality</h3>
+    <p>The normal plan of Spotify offers you 192 kbps audio quality. This is the quality of the compressed music file to
+      make its size smaller. The premium APK has 320 kbps Audio Quality which makes the music sound so good as it is not
+      compressed to save some storage.</p>
+    <p>The 320 kbps Audio Quality increases the dynamic range of the music. You get to listen to the highs and lows of
+      the music better than ever. Normally, the difference between both the qualities can be noticed with big speakers.
+      Try playing both the qualities in your car's speaker. You might notice the difference in the bass.</p>
+
+    <h3 class="sub-heading">Skip the song whenever you want</h3>
+    <p>Spotify, when you are on a free plan, insists you to listen to the song you are on in the playlist. In other
+      words, it does not allow you to skip the song. All this being done to force you to purchase the plan but Spotify
+      Premium MOD APK comes useful here as it has unlimited skips.</p>
+    <p>Modded versions having unlimited skips means you can play or change the song whenever you want to without waiting
+      for it to end. Not many of us are fond of listening to a full track so this feature becomes very handy.</p>
+
+    <h3 class="sub-heading">Other Premium Features Unlocked</h3>
+    <p>Spotify is available worldwide but still it has some of the premium features which are only available in some
+      countries. One of those features are <strong>podcasts</strong>. If you are in Asia, you won't be able to use it
+      (in some countries).</p>
+    <p>And yes, you can also not use it even if you buy the subscription plan. So, why miss out on this feature when you
+      can use it for free on Spotify MOD App. The modded version does not care in which part of the world you are
+      located. It provides you with all the features which are available worldwide. And to keep your account safe while using Spotify, it is
+      always a good idea to reset
+        your password from time to time.<br>With Spotify MOD App, you get access to all premium features for free—no
+      region limits, no restrictions. It's the same thrill <strong>Free Fire</strong> players feel when they join the
+       where they can try out exclusive updates
+      before anyone else.
+    </p>
+    <p>This is the best way you can get to use the podcasts feature of Spotify. The good thing is that they can also be
+      downloaded and added into the playlists. And yes, they have unlimited skips too.</p>
+  </div>
+
+  <!-- ===== COMPARISON TABLE ===== -->
+  <section id="comparison" class="spotify-compare">
+    <h2>Spotify vs Spotify MOD APK</h2>
+    <div class="compare-card">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Spotify (Official)</th>
+              <th>Spotify MOD APK (Unofficial)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cost</td>
+              <td>Free with ads or Premium (paid)</td>
+              <td>Free, but not authorized</td>
+            </tr>
+            <tr>
+              <td>Ads</td>
+              <td>Yes on free plan, none on Premium</td>
+              <td>No ads (unofficial hack)</td>
+            </tr>
+            <tr>
+              <td>Offline Listening</td>
+              <td>Premium users only</td>
+              <td>Available without subscription (unofficial)</td>
+            </tr>
+            <tr>
+              <td>Audio Quality</td>
+              <td>Up to 192 kbps free, 320 kbps Premium</td>
+              <td>Claims 320 kbps always</td>
+            </tr>
+            <tr>
+              <td>Skips</td>
+              <td>Limited on free, unlimited on Premium</td>
+              <td>Unlimited skips</td>
+            </tr>
+            <tr>
+              <td>Account Safety</td>
+              <td>Safe, complies with Spotify Terms</td>
+              <td>High risk of suspension or ban</td>
+            </tr>
+            <tr>
+              <td>Security</td>
+              <td>Official store, secure updates</td>
+              <td>Possible malware/data risks</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">⚠️ This comparison is for informational purposes only. Using unofficial MOD APKs can be unsafe and
+        against Spotify's Terms of Service.</p>
+    </div>
+  </section>
+
+  <!-- ===== FAQ SECTION ===== -->
+  <section id="faq" class="spotify-faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <details>
+        <summary>Is Spotify free to use?</summary>
+        <p>Yes. Spotify has a free plan supported by ads. To remove ads, download songs, and unlock higher quality, you
+          need a Premium subscription.</p>
+      </details>
+      <details>
+        <summary>What is a Spotify MOD APK?</summary>
+        <p>A Spotify MOD APK is an unofficial modified version of the app that claims to unlock Premium features for
+          free. These versions are <strong>not authorized</strong> by Spotify.</p>
+      </details>
+      <details>
+        <summary>Is it safe to install Spotify MOD APK?</summary>
+        <p>No. MOD APKs come from unverified sources and can contain malware, spyware, or security risks. They may also
+          result in account suspension.</p>
+      </details>
+      <details>
+        <summary>Can I use Spotify MOD APK on iOS?</summary>
+        <p>No. APK files only work on Android devices. If Spotify is restricted in your region, you can still download
+          it by using a VPN. iOS users must download
+          Spotify from the official App Store.</p>
+      </details>
+      <details>
+        <summary>Do MOD APKs support artists?</summary>
+        <p>No. Streaming through unofficial apps bypasses Spotify's royalty system, which means artist and creators do
+          not get paid for your streams.</p>
+      </details>
+      <details>
+        <summary>What is the best way to enjoy Spotify?</summary>
+        <p>The best way is through the official Spotify app. It's secure to supports your favorite artists and if you
+          don't like any of them just block
+            the artist. Also ensures you always get the latest updates and features.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Spotifyinfo</h3>
+        <p>Informational website about Spotify features, plans, and comparisons.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#playlists">Playlists</a></li>
+          <li><a href="#comparison">Comparison</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-disclaimer">
+        <h4>Disclaimer</h4>
+        <p>This website is for educational purposes only. We are not affiliated with Spotify.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Spotifyinfo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // Auto-fetch thumbnails & titles from Spotify oEmbed
+    (function () {
+      const cards = document.querySelectorAll('.playlist-card[data-spotify]');
+      cards.forEach(async (card) => {
+        const url = card.getAttribute('data-spotify');
+        const img = card.querySelector('img');
+        const titleEl = card.querySelector('.playlist-title');
+        try {
+          const res = await fetch(`https://open.spotify.com/oembed?url=${encodeURIComponent(url)}`);
+          if (!res.ok) throw new Error('oEmbed failed');
+          const data = await res.json();
+          if (data.thumbnail_url) {
+            img.src = data.thumbnail_url;
+          }
+          if (data.title && !titleEl.dataset.locked) {
+            titleEl.textContent = data.title;
+          }
+          // Remove shimmer
+          const cover = card.querySelector('.cover');
+          if (cover) {
+            cover.style.background = '#000';
+            const afterElement = cover.querySelector('::after');
+            if (afterElement) {
+              afterElement.style.content = 'none';
+            }
+          }
+        } catch (e) {
+          img.src = 'https://storage.googleapis.com/support-kms-prod/SmellsLikeSpotify/spotify-logo--monochrome.png';
+          img.alt = 'Spotify';
+        }
+      });
+    })();
+
+    // Animate user numbers on scroll
+    document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll(".eq-users");
+      const speed = 30;
+
+      const animateCount = (counter) => {
+        const target = +counter.getAttribute("data-target");
+        const update = () => {
+          let current = +counter.innerText.replace(/\D/g, "");
+          if (current < target) {
+            counter.innerText = Math.ceil(current + target / speed) + "M+ Users";
+            setTimeout(update, 50);
+          } else {
+            counter.innerText = target + "M+ Users";
+          }
+        };
+        update();
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCount(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      counters.forEach(counter => observer.observe(counter));
+    });
+  </script>
+
+</body>
+
+</html>
